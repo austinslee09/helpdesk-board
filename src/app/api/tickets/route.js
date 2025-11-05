@@ -1,13 +1,6 @@
-{
-  "id": "t-1023",
-  "title": "Cannot connect to VPN",
-  "description": "User reports intermittent VPN connectivity errors.",
-  "priority": "High",        // Low | Medium | High | Critical
-  "status": "Open",          // Open | In Progress | On Hold | Resolved
-  "assignee": "Unassigned",  // string
-  "updatedAt": "2025-10-31T14:05:00Z"
-}
 
+
+export async function GET() {
 const tickets = [
   { id: 1, priority: "High", status: "Open" },
   { id: 2, priority: "Medium", status: "In Progress" },
@@ -26,3 +19,5 @@ const tickets = [
   { id: 15, priority: "Low", status: "Open" },
   { id: 16, priority: "Critical", status: "In Review" }
 ];
+ return Response.json(tickets);
+}
