@@ -4,9 +4,13 @@ import Board from './components/Board';
 
 export default function HomePage() {
   return (
-    <div>
-      <h1>HELP DESK BOARD</h1>
+  <center>  <div>
+      <h1>Help Desk</h1>
+      <br></br>
+
       <Board/>
-    </div>
+
+    </div></center>
+
   );
 }
