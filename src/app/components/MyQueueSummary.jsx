@@ -1,4 +1,5 @@
 'use client';
+// creates queue
 export default function ({ queue = [], tickets =[], onRemove, onClear}) {
     const nameById = new Map(tickets.map(t => [t.id, t.name]))
     const count = queue.length

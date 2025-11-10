@@ -1,4 +1,5 @@
 'use client';
+// creates status based on filter
 export default function StatusFilter({value, onChange}) {
     const options = ['Open', 'Closed', "In Progress", "On hold"];
 

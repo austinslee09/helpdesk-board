@@ -1,5 +1,5 @@
 'use client';
-
+// Creates cards
 export default function TicketCard({ id, title, priority, status, assignee, updatedAt, description, onAddToQueue, inQueue }) {
     return ( <div>
         <div>

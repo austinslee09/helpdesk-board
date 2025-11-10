@@ -1,6 +1,6 @@
 import TicketCard from './TicketCard';
 
-// Renders a list of tickets with stable keys (ticket.id).
+// Ticket List of items
 export default function TicketList({ tickets, onAddToQueue }) {
 
   return (
