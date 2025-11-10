@@ -36,11 +36,11 @@ export default function Board() {
             catch (err) {
             if (isActive) {
                 setError('Unable to load tickets');
+            }
+            } finally {
                 setLoading(false);
             }
         }
-    }
-
     load();
 
     return () => {
@@ -55,7 +55,7 @@ export default function Board() {
    const setPriority = (priority) =>
     setFilters(prev => ({...prev, priority}))
 
-// Computes visible tickets based on search and status/priority filters
+// Search based on status and priority
 const visibleTickets = useMemo(() => {
     const q = String(search ?? '').trim().toLowerCase();
     return tickets.filter(t => {
@@ -64,13 +64,8 @@ const visibleTickets = useMemo(() => {
        const title = String(t.title ?? '').toLowerCase()
         const description = String (t.description ?? '').toLowerCase()
         const matchesSearch = !q || title.includes(q) || description.includes(q)
-
         return matchesStatus && matchesPriority && matchesSearch 
-
 })
- 
-
-
 
   }, [tickets, filters, search]);
   const isEmpty = !loading && !error && visibleTickets.length === 0;

@@ -1,17 +1,19 @@
 'use client';
 
-export default function TicketCard({ id, title, priority, status, assignee, updatedAt, description, addToQueue, inQueue }) {
+export default function TicketCard({ id, title, priority, status, assignee, updatedAt, description, onAddToQueue, inQueue }) {
     return ( <div>
         <div>
+        <br />
             <h3 > Title: {title}</h3>
+            <br />
              <div>Update Date: {updatedAt}</div>
              <div>Status:{status}</div>
              <div>Description: {description}</div>
              <div>Priority: {priority}</div>
              <div>Assignee: {assignee}</div>
+             <br />
         </div>
-
-         <button onClick={() => addToQueue(id)}>Add to Queue</button>
+         <button onClick={() => onAddToQueue(id)}>Add to Queue</button>
       </div>
     )
 }
