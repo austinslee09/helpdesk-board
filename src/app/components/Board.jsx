@@ -95,8 +95,7 @@ const handleClearQueue = () => setQueue([]);
 
         {/* Ticket List */}
       {!loading && !error && visibleTickets.length > 0 && (
-        <TicketList tickets={visibleTickets} onAddToQueue={handleAddToQueue} />
-        )}
+        <TicketList tickets={visibleTickets} onAddToQueue={handleAddToQueue} />)}
 
       {/* Queue Summary */}
       <MyQueueSummary queue={queue} tickets={tickets} onRemove={handleRemoveFromQueue} onClear={handleClearQueue} />
