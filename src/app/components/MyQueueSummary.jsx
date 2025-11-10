@@ -20,14 +20,11 @@ export default function ({ queue = [], tickets =[], onRemove, onClear}) {
                 {nameById.get(id) ?? id}
               </div>
 
-              <button onClick={() => onRemove?.(id)}  title="Remove from queue"> 
-                Remove
-              </button>
+              <button onClick={() => onRemove?.(id)}  title="Remove from queue"> Remove </button>
             </li>
           ))}
         </ul>
       )}
-       
         <div>
             Queued: <strong>{count}</strong>
             </div>
