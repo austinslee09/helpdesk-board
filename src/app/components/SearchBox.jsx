@@ -4,9 +4,11 @@ import React, { useState } from 'react';
 
     // creates search box
  return(
-    <label className='box1'>
+    <div className='search'>
+    <label>
         <span> Search </span>
         <input type="text"value={value} onChange={(e) => onChange(e.target.value)} />
     </label>
+    </div>
  )
 }

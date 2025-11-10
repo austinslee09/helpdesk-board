@@ -26,7 +26,7 @@ body {
 }
 
 h1{
-  font-size: large;
+  font-size: 36px;
 }
 
   button{
@@ -49,6 +49,17 @@ h1{
     width: 300px;
   }
   
+  .ticket-card:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 24px rgba(42, 35, 69, 0.08);
+}
+
   .list{
     background-color: rgb(42, 42, 110);
+    width: 500px;
+  }
+  
+  .search{
+    background-color: grey;
+    width: 225;
   }

@@ -6,11 +6,12 @@ export default function ({ queue = [], tickets =[], onRemove, onClear}) {
     const isEmpty = count === 0
  
     return (
-        <div >
+        <div>
+            <br />
       <h2>Queue</h2>
 
       {isEmpty ? (
-        <p >Your queue is empty.</p>
+        <p >Queue empty</p>
       ) : (
         <ul >
           {queue.map((id) => (
