@@ -28,3 +28,27 @@ body {
 h1{
   font-size: large;
 }
+
+  button{
+    color: beige;
+   text-decoration: underline;
+   box-shadow: 0 0 10px
+  }
+ 
+  .homepage{
+    color: #ededed;
+  };
+
+  .list{
+     display: grid
+  }
+
+  .card{
+    background-color: rgb(143, 159, 145); 
+    height: 225px;
+    width: 300px;
+  }
+  
+  .list{
+    background-color: rgb(42, 42, 110);
+  }

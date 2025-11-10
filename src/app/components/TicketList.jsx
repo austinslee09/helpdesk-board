@@ -4,7 +4,8 @@ import TicketCard from './TicketCard';
 export default function TicketList({ tickets, onAddToQueue }) {
 
   return (
-    <div>
+    <div className='list'>
+        <br />
       <h2>Tickets</h2>
       <ul>
         {tickets.map((t) => (

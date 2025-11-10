@@ -2,7 +2,7 @@
 // Creates cards
 export default function TicketCard({ id, title, priority, status, assignee, updatedAt, description, onAddToQueue, inQueue }) {
     return ( <div>
-        <div>
+        <div className="card">
         <br />
             <h3 > Title: {title}</h3>
             <br />
