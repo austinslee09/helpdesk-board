@@ -105,7 +105,7 @@ const handleClearQueue = () => setQueue([]);
          {loading && <p>Loading…</p>}
          {error && <p>{error}</p>} 
 
-      {isEmpty && <p>No tickets match your filters.</p>}
+      {isEmpty && <p>No match</p>}
     </main>
   );
 }
