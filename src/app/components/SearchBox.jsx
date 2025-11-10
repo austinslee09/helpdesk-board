@@ -1,10 +1,11 @@
 'use client';
 import React, { useState } from 'react';
- const [searchTerm, setSearchTerm] = useState('');
+ export default function SearchBox ({ value, options = [], onChange }) {
+
  return(
     <label className='box1'>
-        <input type="text"
-        value={value}
-         onChange={(e) => onChange(e.target.value)} />
+        <span> Search </span>
+        <input type="text"value={value} onChange={(e) => onChange(e.target.value)} />
     </label>
  )
+}

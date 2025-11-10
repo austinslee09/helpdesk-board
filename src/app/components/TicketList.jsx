@@ -11,8 +11,6 @@ export default function TicketList({ tickets, addToQueue }) {
      </div>
    );
  }
-
-
  return (
    <div>
      <h2 >Tickets</h2>
@@ -27,7 +25,7 @@ export default function TicketList({ tickets, addToQueue }) {
              assignee={t.assignee}
              updatedAt={t.updatedAt}
              
-             addToQueue={onAddToQueue}
+             addToQueue={addToQueueddToQueue}
            />
          </li>
        ))}
