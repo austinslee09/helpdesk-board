@@ -1,37 +1,28 @@
-'use client';
+import TicketCard from './TicketCard';
 
-import TicketCard from "./TicketCard";
+// Renders a list of tickets with stable keys (ticket.id).
+export default function TicketList({ tickets, onAddToQueue }) {
 
-export default function TicketList({ tickets, addToQueue }) {
- if (!tickets?.length) {
-   return (
-     <div>
-       <h2>Tickets</h2>
-       <p >No tickets.</p>
-     </div>
-   );
- }
- return (
-   <div>
-     <h2 >Tickets</h2>
-     <ul>
-       {tickets.map((t) => (
-         <li key={t.id}>
-           <TicketCard
-             id={t.id}
-             title={t.title}
-             priority={t.priority}
-             status={t.status}
-             assignee={t.assignee}
-             updatedAt={t.updatedAt}
-             
-             addToQueue={addToQueueddToQueue}
-           />
-         </li>
-       ))}
-     </ul>
-   </div>
- );
+  return (
+    <div>
+      <h2>Tickets</h2>
+      <ul>
+        {tickets.map((t) => (
+          <li key={t.id}>
+            <TicketCard
+              id={t.id}
+              title={t.title}
+              priority={t.priority}
+              status={t.status}
+              description={t.description}
+              assignee={t.assignee}
+              updatedAt={t.updatedAt}
+              onAddToQueue={onAddToQueue}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
-
 
