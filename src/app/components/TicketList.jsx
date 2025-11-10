@@ -17,7 +17,7 @@ export default function TicketList({ tickets, onAddToQueue }) {
               status={t.status}
               description={t.description}
               assignee={t.assignee}
-              updatedAt={t.updatedAt}
+              updateAt={t.updatedAt}
               onAddToQueue={onAddToQueue}/>
           </li>
         ))}

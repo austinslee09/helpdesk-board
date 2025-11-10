@@ -6,8 +6,8 @@ export default function TicketCard({ id, title, priority, status, assignee, upda
         <br />
             <h3 > Title: {title}</h3>
             <br />
-             <div>Update Date: {updatedAt}</div>
              <div>Status:{status}</div>
+             <div>Update Date: {updatedAt}</div>
              <div>Description: {description}</div>
              <div>Priority: {priority}</div>
              <div>Assignee: {assignee}</div>
